@@ -1,0 +1,3 @@
+- name: Retrieve Server Facts
+  clc_server_fact:
+    server_id: UC1ACCTSRVR10
