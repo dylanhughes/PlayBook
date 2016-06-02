@@ -1,7 +1,7 @@
 ---
 - name: Delete a snapshot on a set of servers
-  hosts: GB3WWLADEVTIB01
-  gather_facts: True
+  hosts: localhost
+  gather_facts: False
   connection: local
   tasks:
     - name: Delete existing snapshots
