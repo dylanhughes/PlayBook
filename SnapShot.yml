@@ -1,6 +1,6 @@
 ---
 - name: Delete a snapshot on a set of servers
-  hosts: localhost
+  hosts: GB3WWLADEVTIB01
   gather_facts: False
   connection: local
   tasks:
@@ -10,7 +10,6 @@
             - GB3WWLADEVTIB01
         wait: True
         state: absent
-        gather_facts: True
 - name: Create a snapshot on a set of servers
   hosts: localhost
   gather_facts: False
