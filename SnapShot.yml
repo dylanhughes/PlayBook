@@ -1,6 +1,6 @@
 ---
 - name: Delete a snapshot on a set of servers
-  hosts: localhost
+  hosts: GB3WWLADEVTIB01
   gather_facts: True
   connection: local
   tasks:
