@@ -8,4 +8,5 @@
     user: admin
     password: "temp"
     storage_account: portalvhds1r58hwjykthyk.blob.core.windows.net
+    subscription_id: f7e67901-9a91-4737-87c6-0e181817ca8c
     wait: yes
