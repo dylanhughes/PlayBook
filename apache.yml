@@ -3,6 +3,6 @@
   hosts: all
   connection: ssh
   sudo: yes
-  gather_facts: False
+  gather_facts: True
   roles:
     - role: apache
