@@ -1,16 +1,11 @@
 ---
+- name: Equivilent of apt-get update
+  apt: update_cache=yes
+- name: Equivilant of apt-get upgrade
+  apt: upgrade=dist
 - name: install Apache
   apt: pkg={{ item }} state=present
   with_items:
   - apache2
   - apache2-doc
   - apache2-utils
-- name: Equivilent of apt-get update
-  apt: update_cache=yes
-- name: Equivilant of apt-get upgrade
-  apt: upgrade=dist
-- name: disable mpm_event
-  apache2_module: name=mpm_event state=absent
-- name: enable mpm_prefork
-  apache2_module: name=mpm_prefork state=present
-  notify: Start HTTPD
