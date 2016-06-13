@@ -1,0 +1,9 @@
+---
+- name: Configure apache
+  hosts: all
+  connection: ssh
+  gather_facts: False
+  roles:
+    - role: apacheconf
+      tags:
+        - config
