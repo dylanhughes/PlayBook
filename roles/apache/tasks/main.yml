@@ -9,3 +9,7 @@
   apt: update_cache=yes
 - name: Equivilant of apt-get upgrade
   apt: upgrade=dist
+- name: disable mpm_event
+  apache2_module: name=mpm_event state=absent
+- name: enable mpm_prefork
+  apache2_module: name=mpm_prefork state=present
