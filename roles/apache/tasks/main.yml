@@ -2,5 +2,3 @@
 - name: install Apache
   apt: name=apache2 state=present
   wait: True
-  register: httpdinst
-  - debug: var=httpdinst
