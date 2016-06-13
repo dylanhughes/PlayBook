@@ -3,3 +3,8 @@
   action: copy src=templates/mynewsite.conf dest=/etc/apache2/sites-available/mynewsite.conf owner=root group=root mode=0644
 - name: Create sym link from sites-enabled
   file: src=/etc/apache2/sites-available/mynewsite.conf dest=/etc/apache2/sites-enabled/mynewsite.conf owner=root group=root state=link
+- name: disable mpm_event module
+  apache2_module: name=mpm_event state=absent
+- name: enable mpm_prefork module
+  apache2_module: name=mpm_prefork state=present
+  notify: Start HTTPD
