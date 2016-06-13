@@ -1,7 +1,7 @@
 - name: install Apache
   hosts: all
   connection: ssh
-    apt: name=apache2 state=present
-    wait: True
-    register: httpdinst
-  - debug: var=httpdinst
+  apt: name=apache2 state=present
+  wait: True
+  register: httpdinst
+- debug: var=httpdinst
