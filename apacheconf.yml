@@ -2,8 +2,7 @@
 - name: Configure apache
   hosts: all
   connection: ssh
+  sudo: yes
   gather_facts: False
   roles:
     - role: apacheconf
-      tags:
-        - config
