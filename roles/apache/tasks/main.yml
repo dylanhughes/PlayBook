@@ -1,3 +1,4 @@
+---
 - name: install Apache
   hosts: all
   connection: ssh
