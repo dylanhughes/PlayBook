@@ -1,3 +1,4 @@
+---
 - local_action:
     module: azure
     name: cotarget01
