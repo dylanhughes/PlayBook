@@ -1,4 +1,8 @@
 ---
+- name: Configure apache
+  hosts: all
+  connection: ssh
+  gather_facts: False
 - local_action:
     module: azure
     name: lnxtarget02
