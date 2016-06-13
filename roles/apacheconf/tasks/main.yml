@@ -7,4 +7,6 @@
   apache2_module: name=mpm_prefork state=absent
 - name: enable mpm_event module
   apache2_module: name=mpm_event state=present
+- name: a2ensite example.com
+  command: a2ensite example.com
   notify: Restart HTTPD
