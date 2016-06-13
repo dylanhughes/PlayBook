@@ -1,3 +1,7 @@
 ---
 - name: install Apache
   apt: name=apache2 state=present
+- name: Equivilent of apt-get update
+  apt: update_cache=yes
+- name: Equivilant of apt-get upgrade
+  apt: upgrade=dist
