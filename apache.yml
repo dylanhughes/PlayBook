@@ -2,6 +2,7 @@
 - name: Install software
   hosts: all
   connection: ssh
+  sudo: yes
   gather_facts: True
   roles:
     - role: apache
