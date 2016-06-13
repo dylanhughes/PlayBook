@@ -1,4 +1,4 @@
 ---
 - name: install Apache
-  apt: name=apache2 state=absent
+  apt: pkg=apache2 state=absent
   
