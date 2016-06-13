@@ -5,13 +5,13 @@
   gather_facts: False
   tasks:
   - local_action:
-    module: azure
-    name: lnxtarget02
-    role_size: Small
-    image: b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-precise-12_04_3-LTS-amd64-server-20160610-en-us-30GB
-    location: 'North Europe'
-    user: admin
-    password: "temp"
-    storage_account: portalvhds1r58hwjykthyk.blob.core.windows.net
-    subscription_id: f7e67901-9a91-4737-87c6-0e181817ca8c
-    wait: yes
+      module: azure
+      name: lnxtarget02
+      role_size: Small
+      image: b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-precise-12_04_3-LTS-amd64-server-20160610-en-us-30GB
+      location: 'North Europe'
+      user: admin
+      password: "temp"
+      storage_account: portalvhds1r58hwjykthyk.blob.core.windows.net
+      subscription_id: f7e67901-9a91-4737-87c6-0e181817ca8c
+      wait: yes
