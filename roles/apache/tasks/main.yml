@@ -1,6 +1,10 @@
 ---
 - name: install Apache
-  apt: pkg=apache2 state=present
+  apt: pkg={{ item }} state=present
+  with_items:
+  - apache2
+  - apache2-doc
+  - apache2-utils
 - name: Equivilent of apt-get update
   apt: update_cache=yes
 - name: Equivilant of apt-get upgrade
