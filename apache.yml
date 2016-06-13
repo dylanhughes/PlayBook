@@ -3,7 +3,7 @@
   hosts: all
   connection: ssh
   sudo: yes
-  gather_facts: True
+  gather_facts: False
   roles:
     - role: apache
       tags:
