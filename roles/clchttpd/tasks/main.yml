@@ -1,6 +1,6 @@
 ---
 - name: httpd role
-  hosts: 10.105.98.12
+  hosts: gb3wwlaweb03
   connection: local
   tasks:
   - name: yum update
