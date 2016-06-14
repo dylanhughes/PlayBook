@@ -1,0 +1,22 @@
+---
+- name: Remove Apache
+  hosts: all
+  connection: ssh
+  sudo: yes
+  gather_facts: True
+  tasks:
+  - name: disable mpm_event module
+    apache2_module: name=mpm_event state=absent
+  - name: delete sites-enabled file
+    file: path=/etc/apache2/sites-enabled/{{ item }} state=absent
+    with_items: example.com.conf
+  - name: delete sites-available file
+    file: path=/etc/apache2/sites-available/{{ item }} state=absent
+    with_items: example.com.conf
+  - name: remove apache packages
+    apt: pkg={{ item }} state=absent
+    with_items:
+    - apache2
+    - apache2-doc
+    - apache2-utils
+    
