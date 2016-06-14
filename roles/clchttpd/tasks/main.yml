@@ -1,1 +1,9 @@
-
+---
+- name: httpd role
+  hosts: 10.105.98.12
+  connection: local
+  tasks:
+  - name: yum update
+    action: yum name=* state=latest
+  - name: install httpd
+    yum: pkg=httpd state=latest
