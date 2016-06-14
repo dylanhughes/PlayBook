@@ -2,7 +2,7 @@
 - name: Install httpd on RedHat
   hosts: gb3wwlaweb03
   connection: ssh
-    tasks:
+  tasks:
     - name: yum update
       action: yum name=* state=latest
     - name: install httpd
