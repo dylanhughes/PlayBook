@@ -1,5 +1,6 @@
 ---
 - name: Install httpd and mysql on RedHat
   hosts: gb3wwlaweb03
+  connection: local
   roles:
     - role: clchttpd
