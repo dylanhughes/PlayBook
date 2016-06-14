@@ -1,6 +1,5 @@
 ---
 - name: Install httpd on RedHat
-  hosts: 10.105.98.12
-  connection: local
   roles:
   - role: clchttpd
+  - role: clcmysql
