@@ -3,7 +3,7 @@
   hosts: gb3wwlaweb03
   connection: local
   tasks:
-  - name: yum update
-    action: yum name=* state=latest
-  - name: install httpd
-    yum: pkg=httpd state=latest
+    - name: yum update
+      action: yum name=* state=latest
+    - name: install httpd
+      yum: pkg=httpd state=latest
