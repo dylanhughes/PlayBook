@@ -1,5 +1,5 @@
 ---
 - name: Install httpd and mysql on RedHat
   roles:
-  - role: clchttpd
-  - role: clcmysql
+    - role: clchttpd
+    - role: clcmysql
