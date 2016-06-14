@@ -3,7 +3,7 @@
   hosts: gb3wwlaweb03
   connection: ssh
   sudo: yes
-  gather_facts: True
+  gather_facts: False
     tasks:
     - name: yum update
       action: yum name=* state=latest
