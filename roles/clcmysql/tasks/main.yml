@@ -1,1 +1,7 @@
-
+---
+- name: mysql role
+  hosts: gb3wwlaweb03
+  connection: local
+  tasks:
+  - name: install mysql
+    yum: pkg=mysql-server state=latest
