@@ -2,21 +2,23 @@
 
  - name: Build Servers
    hosts: localhost
-   serial: 2
+   serial: 1
    gather_facts: false
    connection: local
    tasks:
-   - name: Deploy SQL Servers 
+   - name: Deploy Backup Servers 
      clc_server:
-       cpu: 4
-       memory: 48
-       description: 'SQL HA Cluster node'
+       cpu: 1
+       memory: 4
+       description: 'Backup Server'
        location: CA3
        group: 'Managed Core Servers'
        managed_os: true
-       name: MGSQL
+       name: BACKUP
        network_id: 'Axios_core_10.101.152'
+       primary_dns: 10.101.152.12
+       secondary_dns: 10.101.152.13
        template: WIN2012R2DTC-64
-       count: 2
+       count: 1
        wait: yes
      register: clc
