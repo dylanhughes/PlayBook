@@ -6,15 +6,15 @@
    gather_facts: false
    connection: local
    tasks:
-   - name: Deploy Domain Controllers
+   - name: Deploy SQL Servers 
      clc_server:
-       cpu: 1
-       memory: 2
-       description: 'Domain Controller'
+       cpu: 4
+       memory: 48
+       description: 'SQL HA Cluster node'
        location: CA3
        group: 'Managed Core Servers'
        managed_os: true
-       name: MGADDC
+       name: MGSQL
        network_id: 'Axios_core_10.101.152'
        template: WIN2012R2DTC-64
        count: 2
