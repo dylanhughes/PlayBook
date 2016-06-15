@@ -1,11 +1,11 @@
 ---
 
- - name: Create Demo Network
+ - name: Create Network
    hosts: localhost
    gather_facts: False
    connection: local
    tasks:
-     - name: Create a new demo Network
+     - name: Create a new Network
        clc_network:
          location: 'CA3'
          state: present
