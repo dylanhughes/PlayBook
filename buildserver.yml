@@ -18,7 +18,7 @@
        network_id: 'Cust_vlan3_10.102.28'
        primary_dns: 10.101.152.12
        secondary_dns: 10.101.152.13
-       template: UBUNTU12-64
+       template: ubuntu-12-64
        count: 5
        wait: yes
      register: clc
