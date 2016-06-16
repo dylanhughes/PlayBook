@@ -12,7 +12,7 @@
        memory: 4
        description: 'Production Web'
        location: CA3
-       group: '55264 Production'
+       group: '55264 Sobeys'
        managed_os: false
        name: 264WEB
        network_id: 'Cust_vlan3_10.102.28'
