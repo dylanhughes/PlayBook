@@ -2,23 +2,23 @@
 
  - name: Build Servers
    hosts: localhost
-   serial: 1
+   serial: 5
    gather_facts: false
    connection: local
    tasks:
-   - name: Deploy Backup Servers 
+   - name: Deploy Servers 
      clc_server:
        cpu: 1
        memory: 4
-       description: 'Backup Server'
+       description: 'Production Web'
        location: CA3
-       group: 'Managed Core Servers'
-       managed_os: true
-       name: BACKUP
-       network_id: 'Axios_core_10.101.152'
+       group: '55264 Production'
+       managed_os: false
+       name: 264WEB
+       network_id: 'Cust_vlan3_10.102.28'
        primary_dns: 10.101.152.12
        secondary_dns: 10.101.152.13
-       template: WIN2012R2DTC-64
-       count: 1
+       template: UBUNTU12-64
+       count: 5
        wait: yes
      register: clc
