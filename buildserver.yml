@@ -10,12 +10,12 @@
      clc_server:
        cpu: 2
        memory: 8
-       description: 'Production Reports #01'
+       description: 'TEST #01'
        location: CA3
        group: '55264 Sobeys'
        managed_os: false
-       name: 264CSR
-       network_id: 'Cust_vlan3_10.102.28'
+       name: 264WSR
+       network_id: 'Axios_Test_10.102.34'
        primary_dns: 10.101.152.12
        secondary_dns: 10.101.152.13
        template: ubuntu-12-64
