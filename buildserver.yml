@@ -10,15 +10,15 @@
      clc_server:
        cpu: 2
        memory: 8
-       description: 'TEST #01'
+       description: 'Production & Test Integration Server'
        location: CA3
        group: '55264 Sobeys'
-       managed_os: false
-       name: 264WSR
-       network_id: 'Axios_Test_10.102.34'
+       managed_os: true
+       name: 264WIN
+       network_id: 'Cust_vlan3_10.102.28'
        primary_dns: 10.101.152.12
        secondary_dns: 10.101.152.13
-       template: ubuntu-12-64
+       template: WIN2012R2DTC-64
        count: 1
        wait: yes
      register: clc
