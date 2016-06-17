@@ -8,8 +8,8 @@
    tasks:
    - name: Deploy Servers 
      clc_server:
-       cpu: 2
-       memory: 8
+       cpu: 1
+       memory: 4
        description: 'Production & Test Integration Server'
        location: CA3
        group: '55264 Sobeys'
